@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>css3 2D转换</title>
+</head>
+<body>
+	<p>CSS3 转换可以可以对元素进行移动、缩放、转动、拉长或拉伸。</p>
+	
+	<h1>一、translate()方法。</h1>
+	<p>translate()方法，根据左(X轴)和顶部(Y轴)位置给定的参数，从当前元素位置移动。</p>
+	<style>
+		.translate{
+			width: 100px;
+			height: 100px;
+			background: #f00;
+			transform: translate(10px,10px);
+			-ms-transform: translate(10px,10px); /* IE 9 */
+			-webkit-transform: translate(10px,10px); /* Safari and Chrome */
+			color: #fff;
+			text-align: center;
+			line-height: 100px;
+		}
+	</style>
+	tips: X 轴向右为正； Y轴向下为正。
+	<div class="translate">translate</div>
+	
+	
+	<h1>二、rotate()方法</h1>
+	<p>rotate()方法，在一个给定度数顺时针旋转的元素。负值是允许的，这样是元素逆时针旋转。</p>
+
+	<style>
+		.rotate{
+			width: 100px;
+			height: 100px;
+			background: #f00;
+			transform: rotate(30deg);
+			-ms-transform: rotate(30deg); /* IE 9 */
+			-webkit-transform: rotate(30deg); /* Safari and Chrome */
+			color: #fff;
+			text-align: center;
+			line-height: 100px;
+		}
+	</style>
+	<div class="rotate">30deg</div>
+	
+	<h1>三、scale()方法</h1>
+	<p>scale()方法，该元素增加或减少的大小，取决于宽度（X轴）和高度（Y轴）的参数：</p>
+	<style>
+		.scale{
+			width: 100px;
+			height: 100px;
+			background: #f00;
+			-ms-transform:scale(1.2,1.3); /* IE 9 */
+			-webkit-transform: scale(1.2,1.3); /* Safari */
+			transform: scale(1.2,1.3); /* 标准语法 */
+			color: #fff;
+			text-align: center;
+			line-height: 100px;
+		}
+	</style>
+	<div class="scale">1.2, 1.3scale</div>
+	
+	<h1>四、skew()方法</h1>
+	<p>skew()方法，包含两个参数值，分别表示X轴和Y轴倾斜的角度，如果第二个参数为空，则默认为0，参数为负表示向相反方向倾斜：</p>
+	<style>
+		.skew{
+			width: 100px;
+			height: 100px;
+			background: #f00;
+			transform: skew(-10deg,20deg);
+			-ms-transform: skew(-10deg,20deg); /* IE 9 */
+			-webkit-transform: skew(-10deg,20deg); /* Safari and Chrome */
+			color: #fff;
+			text-align: center;
+			line-height: 100px;
+		}
+	</style>
+	<div class="skew">skew</div>
+	
+	
+	
+	<h1>五、matrix()方法</h1>
+	<p>matrix()方法，matrix()方法和2D变换方法合并成一个, matrix 方法有六个参数，包含旋转，缩放，移动（平移）和倾斜功能：</p>
+	<style>
+		.matrix{
+			width: 100px;
+			height: 100px;
+			background: #f00;
+			transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+			-ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* IE 9 */
+			-webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Safari and Chrome */
+			color: #fff;
+			text-align: center;
+			line-height: 100px;
+		}
+	</style>
+	<div class="matrix">matrix</div>
+</body>
+</html>
